@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Epilogue", serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Variables */
+:root {
+  --main-heading: 5rem;
+  --sub-heading: 1.7rem;
+  --main-text: 1.25rem;
+  --p-text: 1rem;
+
+  --bg-color: #fff;
+  --card-bg: #d8d8d8;
+  --input-bg: #f3f3f3;
+  --border-color: #ffd285;
+  --text-color: #2d2d2d;
+}
+
+/* Utility Classes*/
+
+/* Styles */
