@@ -137,10 +137,18 @@ main .container {
   margin-bottom: 20px;
 }
 
+.pricing-text {
+  padding: 20px 0;
+}
 /* FAQ */
 
 .faq {
   padding: 40px 0;
+}
+
+.faq .faq-group {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
 }
 
 .faq .faq-group {
@@ -161,10 +169,8 @@ main .container {
 
 .faq .faq-group .faq-group-header i {
   position: absolute;
+  top: 25px;
   right: 0;
-  top: 35px;
-  font-size: 1.3rem;
-  cursor: pointer;
 }
 
 .faq .faq-group .faq-group-body {
@@ -181,11 +187,17 @@ main .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
   background: #ddd;
+}
+
+.faq ul.faq-menu li {
   padding: 10px 20px;
   border-radius: 10px;
-  font-weight: 600;
-  cursor: menu;
+  text-align: center;
 }
 
 .faq ul.faq-menu li.active {
@@ -193,10 +205,45 @@ main .container {
   color: #fff;
 }
 
-.faq ul.faq-menu li {
-  padding: 10px 20px;
+footer {
+  padding: 40px 0;
+}
+
+footer h4 {
+  margin-bottom: 10px;
+}
+
+footer ul li {
+  line-height: 2.5;
+}
+
+footer a {
+  color: #ccc;
+}
+
+footer i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .card {
+  margin: 20px 30px 30px 0;
+}
+
+.footer input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  text-align: center;
+  margin: 20px 0;
 }
 
 /* Utility Classes */
