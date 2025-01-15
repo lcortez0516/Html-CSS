@@ -17,6 +17,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background: #fff;
+  overflow-x: hidden;
 }
 
 ul {
@@ -234,11 +235,11 @@ footer i {
   align-items: center;
 }
 
-.footer .card {
+footer .card {
   margin: 20px 30px 30px 0;
 }
 
-.footer input[type="email"] {
+footer input[type="email"] {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -381,4 +382,136 @@ i {
 .bg-black {
   background: #000;
   color: #fff;
+}
+
+/* Hamburder btn */
+
+.hamburger-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.hamburger-button .hamburger-line {
+  width: 30px;
+  height: 3px;
+  background: #333;
+  margin: 6px 0;
+}
+
+/* Mobile menu */
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: calc(-100%);
+  width: 250px;
+  height: 100%;
+  z-index: 100;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.5s;
+}
+
+.mobile-menu ul {
+  margin-top: 100px;
+  padding-right: 10px;
+}
+
+.mobile-menu ul li {
+  margin: 10px 0;
+}
+
+.mobile-menu ul li a {
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.mobile-menu a:last-child {
+  width: 100%;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+
+/* Media Queries */
+/* Will take effect when screen is below 960px */
+@media (max-width: 960px) {
+  .text-xxl {
+    font-size: 2.1rem;
+  }
+
+  .testimonials .testimonials-heading {
+    width: 70%;
+  }
+}
+
+/* Will take effect when screen is below 670px */
+@media (max-width: 670px) {
+  nav .main-menu {
+    display: none;
+  }
+
+  nav .hamburger-button {
+    display: block;
+  }
+
+  main .container {
+    background-image: url(images/hero-bg-mobile.png);
+    background-size: 350px;
+    background-position: bottom;
+    height: 730px;
+  }
+
+  main .hero-content,
+  .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  main .hero-buttons a {
+    display: block;
+    margin: 10px;
+  }
+
+  .text-xl {
+    font-size: 1.9rem;
+  }
+
+  .text-lg {
+    font-size: 1.5rem;
+  }
+
+  .text-md {
+    font-size: 1.1rem;
+  }
+
+  .pricing .pricing-grid,
+  footer .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials .testimonials-heading {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer .card {
+    margin-right: 0;
+  }
+
+  footer .footer-grid > div {
+    text-align: center;
+  }
+}
+
+/* Will take effect when screen is below 960px */
+@media (max-width: 500px) {
+  .text-xxl {
+    font-size: 2rem;
+  }
 }
