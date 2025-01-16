@@ -1,0 +1,164 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: var(--color-grey);
+  line-height: 1.5;
+  max-width: 50ch;
+}
+
+/* Variables */
+:root {
+  /* Colors */
+  --color-blue-900: hsl(233, 54%, 16%);
+  --color-blue-600: hsl(234, 25%, 52%);
+  --color-pink-600: hsl(341, 92%, 62%);
+  --color-pink-300: hsl(341, 100%, 83%);
+  --color-grey: hsl(232, 10%, 56%);
+  --color-white: hsl(0, 0%, 100%);
+  --gradient-pink: linear-gradient(hsl(13, 100%, 64%), hsl(322, 87%, 55%));
+  --gradient-purple: linear-gradient(hsl(237, 100%, 64%), hsl(322, 87%, 55%));
+
+  /* Fonts */
+  --fs-1: clamp(2.5rem, 0.4230769230769229rem + 4.102564102564102vw, 3.5rem);
+  --fs-2: clamp(2rem, 0.9615384615384615rem + 2.051282051282051vw, 2.5rem);
+  --fs-3: clamp(1.5rem, 0.46153846153846145rem + 2.051282051282051vw, 2rem);
+  --fs-4: clamp(1.25rem, 0.7307692307692307rem + 1.0256410256410255vw, 1.5rem);
+  --fs-5: 1.125rem;
+  --fs-6: clamp(0.875rem, 0.6153846153846154rem + 0.5128205128205128vw, 1rem);
+  --fs-7: 1.125rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 16px;
+}
+
+header .logo {
+  width: 4.95rem;
+}
+
+/* Hero */
+
+.hero {
+  padding-block: 62px;
+  display: grid;
+  row-gap: 48px;
+}
+
+.hero h1 {
+  font-size: var(--fs-1);
+  color: var(--color-blue-900);
+}
+
+.hero p {
+  margin-block: 24px 40px;
+}
+
+.hero picture {
+  max-width: 37.5rem;
+  justify-self: center;
+}
+/* Utility Styles */
+
+.wrapper {
+  padding-inline: 20px;
+}
+
+.btn {
+  font-size: var(--fs-7);
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 10.5px 24px;
+  border-radius: 28px;
+  transition: all 150ms ease-in-out;
+  display: inline-block;
+}
+
+.btn.dark {
+  background: var(--color-blue-900);
+  color: var(--color-white);
+}
+
+.btn.dark:hover {
+  background: var(--color-blue-600);
+}
+
+.btn.pink {
+  background: var(--gradient-pink);
+  color: var(--color-white);
+}
+
+.btn.pink:hover {
+  opacity: 0.5;
+}
+
+/* Media Queries */
+
+/* tablets */
+@media (width >= 50.625em) {
+  .wrapper {
+    padding-inline: 44px;
+  }
+
+  header {
+    padding-block: 24px;
+  }
+
+  .hero {
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+  }
+
+  .hero .hero__text {
+    padding-block: 42px;
+    padding-inline-end: 0;
+  }
+
+  .hero picture {
+    position: absolute;
+    right: 0;
+    translate: 42% -24%;
+  }
+}
+
+/* Desktop */
+@media (width >= 75em) {
+  .wrapper {
+    margin-inline: auto;
+    max-width: 70em;
+    padding-inline: 0;
+  }
+}
