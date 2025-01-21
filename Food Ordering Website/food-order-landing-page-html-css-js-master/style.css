@@ -1,0 +1,158 @@
+:root {
+  /* color variables */
+  --accent-color: #eaf2f5;
+  --primary-text-color: #141414;
+  --secondary-text-color: #007676;
+  --light-text-color: #fff;
+  --grey-text-color: #383838;
+  --primary-color: #fff;
+  --secondary-color: #007676;
+  --alpha-secondary-color: rgba(0, 118, 118, 0.2);
+  --discount-color: #e71a1c;
+  --card-hover-bg-color: #f9f9f9;
+  --border-color: #f9f9f9;
+  --box-shadow-color: var(--accent-color);
+  --shadow: rgba(0, 0, 0, 0.05);
+  --box-shadow: rgba(0, 0, 0, 0.25);
+  --discount-banner-background-overlay: linear-gradient(
+    rgba(0, 118, 118, 0.8),
+    rgba(0, 118, 118, 0.8)
+  );
+
+  --phone-app-shadow: #c7e1eb;
+  --alpha-primary-color: rgba(255, 255, 255, 0.5);
+  --rating-color: #ffa800;
+
+  /* transition curves */
+  --transition-curve: cubic-bezier(0.36, -0.21, 0.16, 1.97);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: var(--primary-text-color);
+  background: var(--primary-color);
+}
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+/* navbar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10vw;
+  z-index: 9;
+  background: var(--accent-color);
+}
+
+.logo {
+  height: 1.5rem;
+}
+
+nav li a {
+  margin-inline: 1.65625rem;
+}
+
+nav .search-bar {
+  width: 20rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  background: var(--primary-color);
+  padding-inline: 20px;
+  margin-right: 41px;
+}
+
+nav .search-bar .search {
+  height: 100%;
+  width: 80%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: var(--grey-text-color);
+}
+
+/*Utility Classes */
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+/* Containers */
+
+.container {
+  max-width: 80%;
+  margin-inline: auto;
+}
+
+/* Texts */
+.heading {
+  font-size: 5.49875rem;
+  font-weight: 900;
+  line-height: 7.478125rem;
+}
+
+.text-lg {
+  font-size: 6.355rem;
+  font-weight: 500;
+  line-height: 7.625625rem;
+}
+
+.card-heading {
+  font-size: 1.95625rem;
+  font-weight: 400;
+  line-height: 2.346875rem;
+}
+
+.text-md {
+  font-size: 1.5625;
+  font-weight: 400;
+  line-height: 1.875;
+}
+
+.text-sm {
+  font-size: 1.4375rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+.text-ssm {
+  font-size: 1.3125rem;
+  font-weight: 400;
+  line-height: 1.875;
+}
